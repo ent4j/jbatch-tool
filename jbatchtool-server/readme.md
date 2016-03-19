@@ -23,7 +23,7 @@ chmod 755 jbatchtool-cli.sh
 ./jbatchtool-cli.sh  [ジョブ名]
 ### 修正後(args4jによるオプション使用、ジョブへのプロパティ渡し)
 ./jbatchtool-cli.sh  --hostname=[ホスト名 or IPアドレス:localhost] --port=[ポート番号:8080] -username=[ユーザ名] --password=[パスワード] ¥
-                 [ジョブ名] [key1=value1] [key2=value2] [key3=value3]  [key@=value@]
+                 ジョブ名 key1=value1 key2=value2 key3=value3  key@=value@
                  -h=.... -p=... -u=... -i 
                  必須:
                  ジョブ名

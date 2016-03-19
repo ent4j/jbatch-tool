@@ -35,6 +35,11 @@
   		<artifactId>javaee-api</artifactId>
   		<scope>provided</scope>
   	</dependency>
+  	<dependency>
+  		<groupId>org.jbatchtool.core</groupId>
+  		<artifactId>jbatchtool-core</artifactId>
+  		<version>0.1.0-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   <dependencyManagement>
   	<dependencies>
