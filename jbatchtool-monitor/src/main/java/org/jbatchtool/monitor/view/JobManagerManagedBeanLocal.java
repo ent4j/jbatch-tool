@@ -1,4 +1,4 @@
-package org.jbatchtool.server.view;
+package org.jbatchtool.monitor.view;
 
 import java.util.Calendar;
 import java.util.LinkedList;
@@ -20,7 +20,7 @@ import lombok.Data;
 import lombok.extern.java.Log;
 
 @Named @RequestScoped @Data @Log// @Transactional
-public class JobManagerManagedBean {
+public class JobManagerManagedBeanLocal {
 	
 	String curTime =Calendar.getInstance().getTime().toString();
 	

@@ -1,4 +1,4 @@
-package org.jbatchtool.core;
+package org.jbatchtool.server.batch.batchlet;
 
 import javax.batch.api.Batchlet;
 import javax.enterprise.context.Dependent;
