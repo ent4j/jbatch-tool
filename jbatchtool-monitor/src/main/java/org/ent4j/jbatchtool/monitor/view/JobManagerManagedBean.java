@@ -1,4 +1,4 @@
-package org.jbatchtool.monitor.view;
+package org.ent4j.jbatchtool.monitor.view;
 
 import java.util.Calendar;
 import java.util.LinkedList;
@@ -30,7 +30,7 @@ public class JobManagerManagedBean {
 	public void 表示する(){
 		this.jobExecutions.clear();// = new LinkedList<>();
 
-		String contextRoot = "jbatchtool-server";
+		String contextRoot = "my-batchwar1-1.0.0-SNAPSHOT";//"jbatchtool-server";
 		
 		Client client = ClientBuilder.newClient();
 		String uri = "http://localhost:8080/" + contextRoot + "/rest/jbatch/jobExecutions";

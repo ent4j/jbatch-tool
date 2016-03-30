@@ -2,15 +2,32 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jbatchtool.monitor</groupId>
+  <groupId>org.ent4j.jbatchtool.monitor</groupId>
   <artifactId>jbatchtool-monitor</artifactId>
   <version>0.1.0</version>
   <packaging>war</packaging>
+<!-- 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+ -->
+  <distributionManagement>
+    <repository>
+        <id>bintray-banz-ghb-maven</id>
+        <name>banz-ghb-maven</name>
+        <url>https://api.bintray.com/maven/banz-ghb/maven/jbatchtool-monitor/;publish=1</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <finalName>jbatchtool-monitor</finalName>
     <plugins>
@@ -20,6 +37,16 @@
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
+      </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+        </plugin>
+
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
@@ -51,4 +78,10 @@
   		</dependency>
   	</dependencies>
   </dependencyManagement>
+  <parent>
+  	<groupId>org.ent4j.jbatchtool</groupId>
+  	<artifactId>jbatchtool-parent</artifactId>
+  	<version>0.1.0</version>
+  	<relativePath>../jbatchtool-parent</relativePath>
+  </parent>
 </project>
