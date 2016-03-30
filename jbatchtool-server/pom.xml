@@ -27,7 +27,7 @@
   	<dependency>
   		<groupId>org.projectlombok</groupId>
   		<artifactId>lombok</artifactId>
-  		<version>1.16.6</version>
+  		<version>1.16.8</version>
   		<scope>provided</scope>
   	</dependency>
   	<dependency>
@@ -51,4 +51,10 @@
   		</dependency>
   	</dependencies>
   </dependencyManagement>
+  <parent>
+  	<groupId>org.ent4j.jbatchtool</groupId>
+  	<artifactId>jbatchtool-parent</artifactId>
+  	<version>0.1.0</version>
+  	<relativePath>../jbatchtool-parent</relativePath>
+  </parent>
 </project>
