@@ -93,4 +93,10 @@
     <module>../jbatchtool-monitor</module>
     <module>../jbatchtool-cli</module>
   </modules>
+  <!-- <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.jbatchtool.core</groupId>
+  			<artifactId>jbatchtool-core</artifactId>
+  			<version>0.1.1</version></dependency></dependencies></dependencyManagement> -->
 </project>

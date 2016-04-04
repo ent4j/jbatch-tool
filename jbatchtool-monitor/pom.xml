@@ -63,9 +63,9 @@
   		<scope>provided</scope>
   	</dependency>
   	<dependency>
-  		<groupId>org.jbatchtool.core</groupId>
+  		<groupId>org.ent4j.jbatchtool</groupId>
   		<artifactId>jbatchtool-core</artifactId>
-  		<version>0.1.0-SNAPSHOT</version>
+  		<version>0.1.1</version>
   	</dependency>
   </dependencies>
   <dependencyManagement>

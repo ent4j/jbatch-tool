@@ -14,6 +14,7 @@ curl -X GET http://localhost:8080/jbatch/rest/job/SimpleBatch
 curl -X GET http://localhost:8080/jbatchtool-server/rest/jbatch/jobExecutions
 
 curl -X GET http://localhost:8080/my-batchwar1-1.0.0-SNAPSHOT/rest/jbatch/job/SimpleBatch
+curl -X GET http://localhost:8080/my-batchwar2-1.0.0-SNAPSHOT/rest/jbatch/job/SimpleBatch
 
 # 準備
 jbatchtool-cli/target/jbatchtool-cli-bin.zipを解答
